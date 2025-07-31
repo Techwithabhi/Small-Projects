@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess and Win</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔥 Guess and Win 🔥</h2>
+        <p id="message">Player A, guess a number between 1 and 100</p>
+        <p class="timer">⏳ Time left: <span id="timer">10</span> sec</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button onclick="makeGuess()">Submit Guess</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
