@@ -1,0 +1,125 @@
+/* frontend/styles.css */
+:root {
+  --primary-color: #25D366;
+  --primary-dark: #128C7E;
+  --bg-light: #f4f4f4;
+  --bg-dark: #121212;
+  --text-light: #333;
+  --text-dark: #eee;
+  --card-light: #fff;
+  --card-dark: #1e1e1e;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 550px;
+  margin: 60px auto;
+  background-color: var(--card-light);
+  border: 2px solid #25D366;
+  padding: 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .container {
+  background-color: var(--card-dark);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+label {
+  margin-top: 20px;
+  display: block;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+  background-color: #f9f9f9;
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  border-left: 4px solid var(--primary-color);
+  background-color: #e6fff2;
+  font-size: 0.9em;
+  border-radius: 6px;
+}
+
+body.dark-mode #output {
+  background-color: #1b3e31;
+  border-left-color: var(--primary-dark);
+}
+
+.toggle-dark-mode {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-dark-mode button {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.toggle-dark-mode button:hover {
+  background: var(--primary-color);
+  color: white;
+}
