@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(199deg, #8ea6d3, #000e21);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1a144a;
+    padding: 40px 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    animation: fadeIn 0.7s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(255, 251, 1);
+    border-color: #48bb78;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-1px);
+}
+
+.copy-btn {
+    margin-top: 12px;
+    background-color: #007BFF;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+#passwordOutput {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    word-break: break-word;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
