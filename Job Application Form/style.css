@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  body {
+    background: url('/BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: brightness(0.8);
+  }
+
+  .container {
+    background: rgba(0, 32, 24, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    width: 100%;
+    max-width: 750px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    color: #e0fff5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #b6ffe0;
+  }
+
+  .titel_small {
+    font-size: 1.2rem;
+    color: #9ef5c8;
+    font-weight: 300;
+  }
+
+  .form_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .form_control {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 14px 12px;
+    background: rgba(230, 255, 247, 0.6);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #003322;
+    transition: all 0.3s ease;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 255, 170, 0.6);
+  }
+
+  input::file-selector-button {
+    background-color: #00ffc3;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: #000000;
+    font-size: 1rem;
+    background-color: transparent;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label,
+  textarea:focus + label,
+  textarea:not(:placeholder-shown) + label,
+  select:focus + label,
+  select:valid + label {
+    top: -10px;
+    left: 12px;
+    font-size: 0.75rem;
+    background: rgba(0, 32, 24, 0.8);
+    padding: 0 4px;
+    border-radius: 6px;
+    color: #00ffc3;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .button_container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  button {
+    padding: 14px 40px;
+    background: rgba(0, 255, 170, 0.2);
+    color: #ffffff;
+    font-size: 1.1rem;
+    border: 1px solid #00ffc3;
+    border-radius: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  button:hover {
+    background: rgba(0, 255, 170, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 170, 0.5);
+  }
+
+  #box2 {
+    color: #00ffc3;
+  }

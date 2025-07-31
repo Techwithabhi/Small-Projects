@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+  <div class="apply_box">
+    <h1>
+      Job Application <span class="titel_small">(Web)</span>
+    </h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="form_container">
+        <input type="hidden" name="access_key" value="18205c8e-ae0c-4b4b-bdf2-3766b5b06651">
+        <div class="form_control">
+          <input type="text" id="first_name" name="first_name" required placeholder=" " />
+          <label for="first_name">First Name</label>
+        </div>
+
+        <div class="form_control">
+          <input type="text" id="last_name" name="last_name" required placeholder=" " />
+          <label for="last_name">Last Name</label>
+        </div>
+
+        <div class="form_control">
+          <input type="email" id="email" name="email" required placeholder=" " />
+          <label for="email">Email ID</label>
+        </div>
+
+        <div class="form_control">
+          <select id="job_role" name="job_role" required>
+            <option value="" disabled selected hidden></option>
+            <option value="admin">Admin</option>
+            <option value="manager">Manager</option>
+            <option value="Frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="full-stack">Full Stack Developer</option>
+            <option value="ui-ux">UI-UX Designer</option>
+          </select>
+          <label for="job_role">Job Role</label>
+        </div>
+
+        <div class="form_control">
+          <textarea id="address" name="address" rows="4" required placeholder=" "></textarea>
+          <label for="address">Address</label>
+        </div>
+
+        <div class="form_control">
+          <input type="text" id="city" name="city" required placeholder=" " />
+          <label for="city">City</label>
+        </div>
+
+        <div class="form_control">
+          <input type="number" id="pincode" name="pincode" required placeholder=" " />
+          <label for="pincode">Pincode</label>
+        </div>
+
+        <div class="form_control">
+          <input type="date" id="date" name="date" required />
+          <label id="box2" for="date">Start Date</label>
+        </div>
+
+        <div class="form_control">
+          <input type="file" id="upload" name="upload" />
+          <label id="box2" for="upload">Upload Your CV</label>
+        </div>
+      </div>
+
+      <div class="button_container">
+        <button type="submit">Apply Now</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+
+</html>
