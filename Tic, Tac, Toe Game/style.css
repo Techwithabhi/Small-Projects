@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff758c, #02ff30, #ff7eb3, #ffd86f, #fb0303, #e5ff00);
+    background-size: 600% 600%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    animation: movingBackground 10s infinite alternate;
+}
+
+@keyframes movingBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+.cell:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.cell:active {
+    transform: scale(0.9);
+}
+.winning-cell {
+    animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    0% { background-color: #ffdd57; }
+    100% { background-color: #ffcc00; }
+}
+.status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.popup.show {
+    display: block;
+    opacity: 1;
+}
