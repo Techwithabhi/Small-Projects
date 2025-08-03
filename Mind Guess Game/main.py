@@ -21,8 +21,6 @@ while(a != n):
         print("Higher number please⬆️")
 
 
-
-
 print(f"[Niceeee Player A , Now the Competition is just Brutal]\nNow it's your turn")
 
 import random
