@@ -12,6 +12,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function (e) 
     .split(",")
     .map(num => num.trim())
     .filter(num => /^\d{10}$/.test(num));
+    
 
   if (numberList.length === 0) {
     output.innerText = "Please enter at least one valid 10-digit number.";
