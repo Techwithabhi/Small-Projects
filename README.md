@@ -95,7 +95,7 @@
 <details>
 <summary><strong>7. Rock, Paper, Scissors Game</strong></summary>
 
-<img src="https://img.icons8.com/color/96/rock-paper-scissors.png" width="80" alt="RPS Icon"/>
+<img src="/Rock, Paper, Secssior Game/image/rock-paper-scissors.png" width="80" alt="RPS Icon"/>
 
 - **Type:** Web & Python (HTML, CSS, JS, Python)
 - **Description:** The classic game, playable in browser or via Python script. Learn about game logic and user interaction.
