@@ -104,7 +104,7 @@
 <details>
 <summary><strong>8. Tic, Tac, Toe Game</strong></summary>
 
-<img src="https://img.icons8.com/color/96/tic-tac-toe.png" width="80" alt="Tic Tac Toe Icon"/>
+<img src="/Tic, Tac, Toe Game/image/icons8-tic-tac-toe-50.png" width="80" alt="Tic Tac Toe Icon"/>
 
 - **Type:** Web & Python (HTML, CSS, JS, Python)
 - **Description:** Play Tic Tac Toe against a friend or computer. Practice win condition logic and UI updates.
