@@ -133,11 +133,11 @@
     transition: transform 0.3s ease, background 0.3s ease;
   }
 
-  /* button:hover {
+  button:hover {
     background: rgba(0, 255, 170, 0.4);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 255, 170, 0.5);
-  } */
+  }
 
   #box2 {
     color: #00ffc3;
